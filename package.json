@@ -1,0 +1,42 @@
+{
+    "name": "iso-7064",
+    "version": "1.0.0",
+    "description": "Implementation of ISO 7064 used in validation of format like IBAN, LEI, ...",
+    "main": "./src/iso-7064.js",
+    "types": "./src/ison-7064.d.ts",
+    "scripts": {
+      "lint": "node_modules/.bin/eslint .",
+      "test": "node_modules/.bin/mocha --recursive test",
+      "test-coverage": "node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha test"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/EDumdum/iso-7064-js.git"
+    },
+    "keywords": [
+      "ISO 7064",
+      "Validation",
+      "Check digit",
+      "IBAN",
+      "LEI",
+      "Modulo 97"
+    ],
+    "author": "E. Dumont",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/EDumdum/iso-7064-js/issues"
+    },
+    "homepage": "https://github.com/EDumdum/iso-7064-js#readme",
+    "devDependencies": {
+      "chai": "4.1.2",
+      "eslint": "4.9.0",
+      "eslint-config-standard": "10.2.1",
+      "eslint-plugin-import": "2.7.0",
+      "eslint-plugin-node": "5.2.0",
+      "eslint-plugin-promise": "3.6.0",
+      "eslint-plugin-standard": "3.0.1",
+      "istanbul": "0.4.5",
+      "mocha": "4.0.1"
+    }
+  }
+  
