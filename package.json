@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "Implementation of ISO 7064 used in validation of format like IBAN, LEI, ...",
     "main": "./src/iso-7064.js",
-    "types": "./src/ison-7064.d.ts",
+    "types": "./src/iso-7064.d.ts",
     "scripts": {
       "lint": "node_modules/.bin/eslint .",
       "test": "node_modules/.bin/mocha --recursive test",
