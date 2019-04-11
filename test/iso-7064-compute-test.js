@@ -12,13 +12,13 @@ describe('iso-7064-compute', function() {
     it('Check inelligible input (null, undefined, not a string or number)', function() {
         expect(function() { 
             iso7064.compute(null); 
-        }).to.throw('Expecting rawValue of type \'string\', found: \'null\'');
+        }).to.throw('Expecting \'rawValue\' of type \'string\', found: \'null\'');
         expect(function() { 
             iso7064.compute(undefined); 
-        }).to.throw('Expecting rawValue of type \'string\', found: \'undefined\'');
+        }).to.throw('Expecting \'rawValue\' of type \'string\', found: \'undefined\'');
         expect(function() { 
             iso7064.compute([]); 
-        }).to.throw('Expecting rawValue of type \'string\', found: \'object\'');
+        }).to.throw('Expecting \'rawValue\' of type \'string\', found: \'object\'');
     });
 
     it('Check input value format, excepted /^[0-9A-Z]{1,}$/', function() {
