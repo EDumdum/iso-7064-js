@@ -12,7 +12,7 @@ var iso7064 = {
      * 
      * @param {*} rawValue 
      */
-    compute(rawValue) {
+    compute: function(rawValue) {
         const value = stringifyInput(rawValue);
 
         if (!value.match(FORMAT)) {
@@ -33,7 +33,7 @@ var iso7064 = {
      * 
      * @param {*} rawValue 
      */
-    computeWithoutCheck(rawValue) {
+    computeWithoutCheck: function(rawValue) {
         return mod97(rawValue);
     }
 };
@@ -60,13 +60,13 @@ function mod97(value) {
     return buffer % 97;
 }
 
-function stringifyInput(rawValue, valueName = 'rawValue') {
+function stringifyInput(rawValue) {
     if (rawValue === null || rawValue === undefined) {
-        throw new Error('Expecting ' + valueName + ' of type \'string\', found: \'' + rawValue + '\'');
+        throw new Error('Expecting \'rawValue\' of type \'string\', found: \'' + rawValue + '\'');
     }
 
     if (typeof rawValue !== 'string') {
-        throw new Error('Expecting ' + valueName + ' of type \'string\', found: \'' + (typeof rawValue) + '\'');
+        throw new Error('Expecting \'rawValue\' of type \'string\', found: \'' + (typeof rawValue) + '\'');
     }
 
     return rawValue;    
