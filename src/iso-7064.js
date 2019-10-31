@@ -2,17 +2,17 @@
 
 var iso7064 = {
     /**
-     * Check requirements.  
+     * Check requirements.
      * Returns result of modulo 97 applied to the String input rawValue.
      *
      * Requirements:
      * - rawValue must be not `Null`
      * - rawValue must be of type `String`
      * - rawValue must respect format `^[0-9A-Z]{1,}$`
-     * 
-     * @param {*} rawValue 
+     *
+     * @param {*} rawValue
      */
-    compute: function(rawValue) {
+    compute: function (rawValue) {
         const value = stringifyInput(rawValue);
 
         if (!value.match(FORMAT)) {
@@ -23,17 +23,17 @@ var iso7064 = {
     },
 
     /**
-     * Does NOT check requirements.  
+     * Does NOT check requirements.
      * Returns result of modulo 97 applied to the String input rawValue.
      *
      * Requirements:
      * - rawValue must be not `Null`
      * - rawValue must be of type `String`
      * - rawValue must respect format `^[0-9A-Z]{1,}$`
-     * 
-     * @param {*} rawValue 
+     *
+     * @param {*} rawValue
      */
-    computeWithoutCheck: function(rawValue) {
+    computeWithoutCheck: function (rawValue) {
         return mod97(rawValue);
     }
 };
@@ -51,7 +51,7 @@ function mod97(value) {
         charCode = value.charCodeAt(i);
 
         buffer = charCode + (charCode >= CHARCODE_A ? buffer * 100 - CHARCODE_A + 10 : buffer * 10 - CHARCODE_0);
-        
+
         if (buffer > 1000000) {
             buffer %= 97;
         }
@@ -69,7 +69,7 @@ function stringifyInput(rawValue) {
         throw new Error('Expecting \'rawValue\' of type \'string\', found: \'' + (typeof rawValue) + '\'');
     }
 
-    return rawValue;    
+    return rawValue;
 }
 
 module.exports = iso7064;

@@ -9,7 +9,7 @@
  * 
  * @param {*} rawValue 
  */
-export function compute(rawValue: string): number;
+export declare function compute(rawValue: string): number;
 
 /**
  * Does NOT check requirements.  
@@ -22,4 +22,4 @@ export function compute(rawValue: string): number;
  * 
  * @param {*} rawValue 
  */
-export function computeWithoutCheck(rawValue: string): number;
+export declare function computeWithoutCheck(rawValue: string): number;
