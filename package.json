@@ -6,7 +6,7 @@
   "types": "./src/iso-7064.d.ts",
   "scripts": {
     "coverage": "./node_modules/.bin/nyc --reporter=json --reporter=lcov ./node_modules/.bin/mocha --recursive-test",
-    "coverage:codecov": "./node_modules/.bin/codecov -t d9d4b91b-c7da-4c9f-9db2-6b44b5e080d5 -f coverage/*.json",
+    "coverage:codecov": "./node_modules/.bin/codecov -t $CODECOV_TOKEN -f coverage/*.json",
     "lint": "./node_modules/.bin/eslint .",
     "test": "./node_modules/.bin/mocha --recursive-test"
   },
