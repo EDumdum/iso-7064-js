@@ -1,6 +1,6 @@
 [![npm version](https://badge.fury.io/js/iso-7064.svg)](https://badge.fury.io/js/iso-7064)
 [![Build Status](https://travis-ci.org/EDumdum/iso-7064-js.svg?branch=master)](https://travis-ci.org/EDumdum/iso-7064-js)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/eec8eb49ac974397ac3f7f3722b6f218)](https://www.codacy.com/manual/EDumdum/iso-7064-js?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=EDumdum/iso-7064-js&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/eec8eb49ac974397ac3f7f3722b6f218)](https://www.codacy.com/manual/EDumdum/iso-7064-js)
 [![codecov](https://codecov.io/gh/EDumdum/iso-7064-js/branch/master/graph/badge.svg)](https://codecov.io/gh/EDumdum/iso-7064-js)
 [![GitHub issues](https://img.shields.io/github/issues/EDumdum/iso-7064-js.svg)](https://github.com/EDumdum/iso-7064-js/issues)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/Edumdum/iso-7064-js/master/LICENSE)
