@@ -5,8 +5,7 @@
   "main": "./src/iso-7064.js",
   "types": "./src/iso-7064.d.ts",
   "scripts": {
-    "coverage": "./node_modules/.bin/nyc --reporter=json --reporter=lcov ./node_modules/.bin/mocha --recursive-test",
-    "coverage:codacy": "./node_modules/.bin/codacy-coverage -t $CODACY_TOKEN -f coverage/*.json",
+    "coverage": "./node_modules/.bin/nyc --reporter=json --reporter=lcov ./node_modules/.bin/mocha --recursive-test | ./node_modules/.bin/codacy-coverage -t $CODACY_TOKEN",
     "coverage:codecov": "./node_modules/.bin/codecov -t $CODECOV_TOKEN -f coverage/*.json",
     "lint": "./node_modules/.bin/eslint .",
     "test": "./node_modules/.bin/mocha --recursive-test"
