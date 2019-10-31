@@ -6,4 +6,4 @@ node_js:
   - 7
   - 6
 script:
-  - npm run coverage && npm run coverage:codecov
+  - npm run coverage && npm run coverage:codacy && npm run coverage:codecov
