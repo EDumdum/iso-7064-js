@@ -1,6 +1,6 @@
 {
   "name": "iso-7064",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Implementation of ISO 7064 used in validation of format like IBAN, LEI, ...",
   "main": "./src/iso-7064.js",
   "types": "./src/iso-7064.d.ts",
