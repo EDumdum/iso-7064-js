@@ -1,13 +1,14 @@
 {
   "name": "iso-7064",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Implementation of ISO 7064 used in validation of format like IBAN, LEI, ...",
   "main": "./src/iso-7064.js",
   "types": "./src/iso-7064.d.ts",
   "scripts": {
-    "lint": "node_modules/.bin/eslint .",
-    "test": "node_modules/.bin/mocha --recursive test",
-    "test-coverage": "node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha test"
+    "coverage": "./node_modules/.bin/nyc --reporter=json --reporter=lcov ./node_modules/.bin/mocha --recursive-test",
+    "coverage:codecov": "./node_modules/.bin/codecov -t d9d4b91b-c7da-4c9f-9db2-6b44b5e080d5 -f coverage/*.json",
+    "lint": "./node_modules/.bin/eslint .",
+    "test": "./node_modules/.bin/mocha --recursive-test"
   },
   "repository": {
     "type": "git",
@@ -29,13 +30,14 @@
   "homepage": "https://github.com/EDumdum/iso-7064-js#readme",
   "devDependencies": {
     "chai": "4.1.2",
+    "codecov": "^3.6.1",
     "eslint": "4.18.2",
     "eslint-config-standard": "10.2.1",
     "eslint-plugin-import": "2.7.0",
     "eslint-plugin-node": "5.2.0",
     "eslint-plugin-promise": "3.6.0",
     "eslint-plugin-standard": "3.0.1",
-    "istanbul": "0.4.5",
-    "mocha": "6.2.2"
+    "mocha": "6.2.2",
+    "nyc": "^14.1.1"
   }
 }

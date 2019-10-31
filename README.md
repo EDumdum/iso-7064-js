@@ -1,4 +1,6 @@
 [![npm version](https://badge.fury.io/js/iso-7064.svg)](https://badge.fury.io/js/iso-7064)
+[![Codecov](https://img.shields.io/codecov/c/github/EDumdum/iso-7064-js.svg)](https://codecov.io/gh/EDumdum/iso-7064-js)
+[![GitHub issues](https://img.shields.io/github/issues/EDumdum/iso-7064-js.svg)](https://github.com/EDumdum/iso-7064-js/issues)
 [![Build Status](https://travis-ci.org/EDumdum/iso-7064-js.svg?branch=master)](https://travis-ci.org/EDumdum/iso-7064-js)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/Edumdum/iso-7064-js/master/LICENSE)
 
