@@ -1,3 +1,9 @@
 language: node_js
 node_js:
-- '6'
+  - 10
+  - 9
+  - 8
+  - 7
+  - 6
+script:
+  - npm run coverage && npm run coverage:codecov
