@@ -5,6 +5,7 @@
   "main": "./src/iso-7064.js",
   "types": "./src/iso-7064.d.ts",
   "scripts": {
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/EDumdum/iso-7064-js/issues"
   },
-  "homepage": "https://github.com/EDumdum/iso-7064-js#readme"
+  "homepage": "https://github.com/EDumdum/iso-7064-js#readme",
+  "devDependencies": {
+    "jest": "^28.1.0"
+  }
 }
