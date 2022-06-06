@@ -6,6 +6,7 @@
   "types": "./src/iso-7064.d.ts",
   "scripts": {
     "coverage": "jest --coverage",
+    "lint": "eslint . --ext .js",
     "test": "jest"
   },
   "repository": {
@@ -27,6 +28,10 @@
   },
   "homepage": "https://github.com/EDumdum/iso-7064-js#readme",
   "devDependencies": {
+    "eslint": "^8.17.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
     "jest": "^28.1.0"
   }
 }
