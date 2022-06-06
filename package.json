@@ -5,6 +5,7 @@
   "main": "./src/iso-7064.js",
   "types": "./src/iso-7064.d.ts",
   "scripts": {
+    "coverage": "jest --coverage",
     "test": "jest"
   },
   "repository": {
